@@ -1,0 +1,117 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Days One", sans-serif;
+  font-style: normal;
+  color: #f1f1f1;
+  background-color: #0b0e13;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+  overflow-x: hidden;
+}
+body::selection {
+  background-color: #cbfe1c;
+  color: #0b0e13;
+}
+
+:root {
+  /* --secondary-color: #0B0E13; */
+  /* --background-color: #1B1F24; */
+  
+  --primary-color: #cbfe1c;
+  --text-color: #f1f1f1;
+  --gray-color: #99a1af;
+}
+.primary-color{
+  color: var(--primary-color) !important;
+}
+.gray-color{
+  color: var(--gray-color) !important;
+}
+/* ****************************************** */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ****************************************** */
+
+/* ****************************************** */
+.section-title {
+  margin-bottom: 60px;
+}
+.section-title .title {
+  font-family: "Chakra Petch", sans-serif !important;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+  color: var(--primary-color);
+  position: relative;
+}
+.section-title .title::before {
+  content: "";
+  display: inline-block;
+  background-image: linear-gradient(
+    to right in oklab,
+    transparent 0%,
+    #cbfe1c 50%,
+    #cbfe1c 100%
+  );
+  width: 64px;
+  position: absolute;
+  left: -80px;
+  top: 50%;
+  height: 2px;
+  transform: translateY(-50%);
+}
+.section-title .title::after {
+  content: "";
+  display: inline-block;
+  background-image: linear-gradient(
+    to left in oklab,
+    transparent 0%,
+    #cbfe1c 50%,
+    #cbfe1c 100%
+  );
+  width: 64px;
+  position: absolute;
+  right: -80px;
+  top: 50%;
+  height: 2px;
+  transform: translateY(-50%);
+}
+.section-title h2 {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+}
+.section-title p {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+/* ****************************************** */
+/* ****************************************** */
+
+
+/* ****************************************** */
+/* ****************************************** */
+
+/******************** Media Query ********************/

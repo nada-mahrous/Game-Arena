@@ -1,0 +1,138 @@
+.what-we-do {
+  padding: 96px 0 48px;
+}
+
+.what-we-do .section-title .caption {
+  font-family: "Chakra Petch", sans-serif !important;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+}
+.what-we-do .card,
+.what-we-do .my-card {
+  background-color: #1a1a1a;
+  border: 1px solid #1e2939;
+  border-radius: 16px;
+  transition: border 0.3s ease-in-out;
+}
+.what-we-do .card-space {
+  padding: 30px 0;
+}
+.what-we-do .card:hover {
+  border: 1px solid var(--primary-color);
+}
+/* //// */
+.what-we-do .card .shape1 {
+  border-right: 24px solid #0000;
+  border-top: 24px solid #4a5565;
+  width: 0;
+  height: 0;
+  left: -24px;
+  top: -24px;
+  transition:
+    left 0.3s ease-in-out,
+    top 0.3s ease-in-out,
+    border-top 0.3s ease-in-out;
+}
+.what-we-do .card:hover .shape1 {
+  left: 16px;
+  top: 16px;
+  border-top: 24px solid var(--primary-color);
+}
+.what-we-do .card .shape2 {
+  border-left: 24px solid #0000;
+  border-bottom: 24px solid #4a5565;
+  width: 0;
+  height: 0;
+  right: -24px;
+  bottom: -24px;
+  transition:
+    right 0.3s ease-in-out,
+    bottom 0.3s ease-in-out,
+    border-bottom 0.3s ease-in-out;
+}
+.what-we-do .card:hover .shape2 {
+  right: 16px;
+  bottom: 16px;
+  border-bottom: 24px solid var(--primary-color);
+}
+/* //// */
+.what-we-do .card-icon {
+  width: 64px;
+  height: 64px;
+  background-color: #1e2939;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+.what-we-do .card:hover .card-icon {
+  background-color: var(--primary-color);
+}
+.what-we-do .card-icon i {
+  vertical-align: -0.125em;
+  width: 30px;
+  height: 1em;
+  font-size: 24px;
+  line-height: 1.3333;
+  transition: color 0.3s ease-in-out;
+}
+.what-we-do .card:hover .card-icon i {
+  color: #0b0e13 !important;
+}
+.what-we-do .card h3 {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+.what-we-do .card img {
+  border-radius: 16px;
+  vertical-align: middle;
+}
+.what-we-do::after {
+  content: "";
+  display: inline-block;
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    var(--primary-color) 20%,
+    var(--primary-color) 80%,
+    transparent
+  );
+  width: 80%;
+  max-width: 600px;
+  height: 2px;
+  box-shadow:
+    0 0 10px var(--primary-color),
+    0 0 20px #cbfe1c4d;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+}
+/******************** Media Query ********************/
+
+/* mobile first */
+
+/* sm */
+/* @media screen and (min-width: 640px) {
+} */
+
+/* md */
+/* @media screen and (min-width: 768px) {
+} */
+
+/* lg */
+@media screen and (min-width: 1024px) {
+  /* .what-we-do .card,
+  .what-we-do .my-card {
+    padding: 24px 0;
+  } */
+}
+
+/* xl */
+/* @media screen and (min-width: 1280px) {
+} */
+
+/* xxl */
+/* @media screen and (min-width: 1536px) {
+} */
