@@ -95,11 +95,6 @@ This project uses a bold visual identity inspired by gaming and esports platform
 
 - GitHub: [@nada-mahrous](https://github.com/nada-mahrous)
 
----
-
-## 📢 Notes
-
-This project was built as a front-end practice project to improve layout structuring, responsive design, and modern UI implementation for gaming-themed websites.
 
 ---
 
